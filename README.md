@@ -34,6 +34,7 @@ cd main/java/com/github/rosjava_catkin_package/tuw_msgs_java_interface/
 touch SomeClass.java
 ```
 
+## Dependencies
 Once the project has been created you also find 2 java files implementing the talker and listener example, you can delete them.
 The dependencies to other ros projects can be specified in *rosjava_catkin_package/package.xml*
 
@@ -44,6 +45,8 @@ dependencies {
    compile 'org.ros.rosjava_messages:tuw_multi_robot_msgs:0.0+'
 }
 ```
+
+## Build options
 Additionally, a jar file version string must be specified since gradle generates a jar file during compilation and starts a node that loads the jar. This is similar to nodelets. Furthermore, a run argument can be specified that points to the impelmentation of a simple message listener in this example.
 
 ```gradle
